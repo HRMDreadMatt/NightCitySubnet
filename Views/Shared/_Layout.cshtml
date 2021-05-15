@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Night City Subnet</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/Cyber.css">
+    <link rel="stylesheet" href="~/css/site.css" />
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
+            <div class="navbar-brand">
+                <button class="cybr-btn" onclick="location.href='@Url.Action("Index", "Home")'">
+                    Night City<span aria-hidden></span>
+                    <span aria-hidden class="cybr-btn__glitch">Night City</span>
+                    <span aria-hidden class="cybr-btn__tag"></span>
+                </button>
+                <button class="cybr-btn" onclick="location.href='@Url.Action("Privacy", "Home")'">
+                    Privacy<span aria-hidden></span>
+                    <span aria-hidden class="cybr-btn__glitch">Pr1vacy</span>
+                    <span aria-hidden class="cybr-btn__tag"></span>
+                </button>
+                <button class="cybr-btn" onclick="location.href='@Url.Action("ScreamSheets", "Home")'">
+                    ScreamSheets<span aria-hidden></span>
+                    <span aria-hidden class="cybr-btn__glitch">$cream$heets</span>
+                    <span aria-hidden class="cybr-btn__tag"></span>
+                </button>
+                <button class="cybr-btn" onclick="location.href='@Url.Action("Map", "Home")'">
+                    Map<span aria-hidden></span>
+                    <span aria-hidden class="cybr-btn__glitch">M p</span>
+                    <span aria-hidden class="cybr-btn__tag"></span>
+                </button>
+                <button class="cybr-btn" onclick="location.href='@Url.Action("Sponsors", "Home")'">
+                    Sponsors<span aria-hidden></span>
+                    <span aria-hidden class="cybr-btn__glitch">CORPO$</span>
+                    <span aria-hidden class="cybr-btn__tag"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2070 - Night City - <a asp-area="" asp-controller="Home" asp-action="Privacy"></a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

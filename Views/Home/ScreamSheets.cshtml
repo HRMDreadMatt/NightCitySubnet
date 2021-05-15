@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "ScreamSheets";
+}
+
+@{
+    ViewData["Title"] = "";
+}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/css/Cyber.css">
+</head>
+
+<body>
+    <div class="btn-group" role="group">
+        <button class="cybr-btn" onclick="riotClub()" style="padding-bottom:20px">
+            Riot Club <span aria-hidden></span>
+            <span aria-hidden class="cybr-btn__glitch">Ri0t Club</span>
+            <span aria-hidden class="cybr-btn__tag"></span>
+        </button>
+        <br />
+        <button class="cybr-btn" onclick="mox()" style="padding-bottom:20px">
+            Moxes<span aria-hidden></span>
+            <span aria-hidden class="cybr-btn__glitch">MOX</span>
+            <span aria-hidden class="cybr-btn__tag">13</span>
+        </button>
+    </div>
+
+    <div style="padding-top:25px">
+        <div id="riot" style="display:none;">
+            <p style="text-align:center;">
+                <img src="~/images/riotClub.jpg" />
+            </p>
+            <p style="text-align:center;">
+                A new club is celebrating its grand opening in the south of the Watson district - Riot club!
+                The club was created to cater to some of the biggest names in the music industry and features a multi-level bar and all the booze and craft cocktails
+                you may need after dealing with that recent Arasaka transaction or getting burned by your fixer who swears they didn't know about that netrunner, they promise...
+            </p>
+        </div>
+
+        <div id="mox" style="display:none;">
+            <p style="text-align:center;">
+                <img src="~/images/moxeslogo.jpeg" />
+            </p>
+            <p style="text-align:center;">
+                Looing for the hottest braindances, the hottest bartenders, and the hottest nail-ridden baseball bats? You have to check out Moxes!
+                The bar for the bad bitch in your life (and the men who love them)
+            </p>
+        </div>
+    </div>
+</body>
+
+<script>
+    function riotClub() {
+        var x = document.getElementById("riot");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    };
+
+    function mox() {
+        var x = document.getElementById("mox");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    };
+</script>

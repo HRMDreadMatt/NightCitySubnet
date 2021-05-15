@@ -1,0 +1,30 @@
+﻿@font-face {
+    font-family: Cyber;
+    src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+    font-display: swap;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 50px;
+    font-family: 'Cyber', sans-serif;
+    background-color: lightgray;
+}
+
+h2 {
+    text-align: center;
+    color: deeppink;
+    font-family: Cyber;
+}
+
+h5 {
+    text-align: center;
+    font-family: Cyber;
+}
+
+.mainImage {
+    border-radius: 8px;
+}

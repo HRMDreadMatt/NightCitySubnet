@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Night City <br /></h1>
+    <br />
+    <img src="~/images/nightcitylogo.jpg" class="rounded-circle" />
+    <br /><br /><br />
+    <p class="lead"> You are logging into a public Night City terminal</p><p span id="wait" class="font-weight-bold">.</p>
+</div>
+<br />
+
+<script>
+    var dots = window.setInterval(function () {
+        var wait = document.getElementById("wait");
+        if (wait.innerHTML.length > 3)
+            wait.innerHTML = "";
+        else
+            wait.innerHTML += ".";
+    }, 1000);
+</script>
