@@ -1,7 +1,6 @@
 ﻿@{
     Layout = null;
 }
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,23 +11,24 @@
     <link rel="stylesheet" href="~/css/deep.css" />
 </head>
 
-<h1 class="display-4">/deep</h1>
-<button class="alert-secondary" id="login" onclick="login()">Enter</button>
-<br />
-<br />
-<br />
-<p id="demo"></p>
-
-<div style="display:none;" id="container" class="animate-bottom">
-    <p>Abandon all hope, ye who enter here...</p>
+<body>
+    <h1 class="display-4">/deep</h1>
+    <button class="alert-secondary" id="login" onclick="login()">Enter</button>
     <br />
     <br />
-</div>
+    <br />
+    <p id="demo"></p>
 
-<script>
+    <div style="display:none;" id="container" class="animate-bottom">
+        <p>Abandon all hope, ye who enter here...</p>
+        <br />
+        <br />
+    </div>
+
+    <script>
     function login() {
-        var password = "GetPancakesAtTomsDiner!";
-        var result = prompt("Hiya! If you found this, preem work! If your lookin to get past that Hellhound, I got you! Just throw my encoded key here: -8ug8ear❤️");
+        var password = "@NightCitySubnet.Controllers.HomeController.DeepJson()";
+        var result = prompt("Hiya! If you found this, preem work! If your lookin to get past that Hellhound, I got you! Just throw my encoded key here! -8ug8ear❤️");
         if (result == password) {
             document.getElementById("demo").innerHTML = $('#container').html();
         } else {
@@ -36,4 +36,5 @@
             window.history.back();
         };
     };
-</script>
+    </script>
+</body>

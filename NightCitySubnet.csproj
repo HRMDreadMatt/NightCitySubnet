@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="wwwroot\images\nicola-taste-the-love-Resize.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

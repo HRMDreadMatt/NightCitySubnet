@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using NightCitySubnet.Models;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace NightCitySubnet.Controllers
 {
@@ -61,6 +60,23 @@ namespace NightCitySubnet.Controllers
         public IActionResult Deep()
         {
             return View();
+        }
+
+        public static string DeepJson()
+        {
+            JObject secret = JObject.Parse(System.IO.File.ReadAllText(@".\Data\deep.json"));
+
+            using (StreamReader file = System.IO.File.OpenText(@".\Data\deep.json"))
+            using (JsonTextReader reader = new JsonTextReader(file))
+            {
+                JObject readSecret = (JObject)JToken.ReadFrom(reader);
+            }
+
+            var newSecret = secret.ToString();
+            var adjustJson = JsonConvert.DeserializeObject(newSecret).ToString();
+            string final = adjustJson.Split('\"')[3];
+
+            return final;          
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
