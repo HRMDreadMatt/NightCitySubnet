@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/css/deep.css" />
+</head>
+
+<h1 class="display-4">/deep</h1>
+<button class="alert-secondary" id="login" onclick="login()">Enter</button>
+<br />
+<br />
+<br />
+<p id="demo"></p>
+
+<div style="display:none;" id="container" class="animate-bottom">
+    <p>Abandon all hope, ye who enter here...</p>
+    <br />
+    <br />
+</div>
+
+<script>
+    function login() {
+        var password = "GetPancakesAtTomsDiner!";
+        var result = prompt("Hiya! If you found this, preem work! If your lookin to get past that Hellhound, I got you! Just throw my encoded key here: -8ug8ear❤️");
+        if (result == password) {
+            document.getElementById("demo").innerHTML = $('#container').html();
+        } else {
+            alert("NetWatch KRASH barrier has blocked access to this subnet. Please log out now.");
+            window.history.back();
+        };
+    };
+</script>

@@ -58,7 +58,7 @@ namespace NightCitySubnet.Controllers
             return View();
         }
 
-        public IActionResult DarkWeb()
+        public IActionResult Deep()
         {
             return View();
         }
