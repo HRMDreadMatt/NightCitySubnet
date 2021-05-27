@@ -11,19 +11,27 @@
     <link rel="stylesheet" href="~/css/deep.css" />
 </head>
 
-<body>
-    <h1 class="display-4">/deep</h1>
-    <button class="alert-secondary" id="login" onclick="login()">Enter</button>
+<body id="login" onload="login()">
+    <br />
+    <br />
+    <p class="alert-secondary" id="login" onload="login()"></p>
     <br />
     <br />
     <br />
     <p id="demo"></p>
 
-    <div style="display:none;" id="container" class="animate-bottom">
-        <p>Abandon all hope, ye who enter here...</p>
-        <br />
-        <br />
-    </div>
+    <div style="display:none;" id="container">
+                <p>>  Abandon all hope, ye who enter here...</p>
+                <br />
+                <p>>  Welcome to the /deep console.</p>
+                <p>>  Type L to see an available list of commands.</p>
+                <br />
+                <p id="results"></p>
+                <br />
+                <input id="input" type="text" style="color:greenyellow" onfocus="this.value = ''; this.style.color=#6af55d;" />
+                <button onclick="userInput()" class="button">run</button>
+            </div>
+            <br />
 
     <script>
     function login() {
@@ -31,10 +39,50 @@
         var result = prompt("Hiya! If you found this, preem work! If your lookin to get past that Hellhound, I got you! Just throw my encoded key here! -8ug8ear❤️");
         if (result == password) {
             document.getElementById("demo").innerHTML = $('#container').html();
+            console.log("Congrats! You found the first flag! ");
         } else {
-            alert("NetWatch KRASH barrier has blocked access to this subnet. Please log out now.");
+            alert("NetWatch KRASH barrier has blocked access to this subnet. You are being redirected now.");
             window.history.back();
         };
-    };
+     };
+    </script>
+    <script>
+        function userInput() {
+            var text;
+            var user = document.getElementById("input").value;
+
+            switch (user) {
+                case "L":
+                    text = ">  Type L for a List of commands || type H for Help || Type V for the Voodoo Boys subnet || Type X for a surprise"
+                    break;
+                case "l":
+                    text = ">  Type L for a List of commands || type H for Help || Type V for the Voodoo Boys subnet || Type X for a surprise"
+                    break;
+                case "H":
+                    text = ">  Thanks to some preem netrunners, all major functions of the /deep console have been adjusted to a single character. To see a list of known commands, type L"
+                    break;
+                case "h":
+                    text = ">  Thanks to some preem netrunners, all major functions of the /deep console have been adjusted to a single character. To see a list of known commands, type L"
+                    break;
+                case "V":
+                    text = ">  Add Voodoo API here"
+                    break;
+                case "v":
+                    text = ">  Add Voodoo API here"
+                    break;
+                case "X":
+                    text = ">  To be implemented"
+                    break;
+                case "x":
+                    text = ">  To be implemented"
+                    break;
+                case "skills":
+                    text = ">  Contrats! You found the 2nd flag!"
+                    break;
+                default:
+                    text = ">  That is not a known command"
+            }
+            document.getElementById("results").innerHTML = text;
+        }
     </script>
 </body>

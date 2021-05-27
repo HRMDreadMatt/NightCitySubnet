@@ -16,38 +16,53 @@ body {
 }
 
 #container {
-    display: none;
-    text-align: center;
-}
-
-.animate-bottom {
     position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
+    display: none;
+    width: 1000px;
+    height: 600px;
+    text-align: left;
 }
 
-@-webkit-keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-
-    to {
-        bottom: 0px;
-        opacity: 1
-    }
+#input {
+    background-color: black;
+    color: greenyellow;
 }
 
-@keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
+.button {
+    position: absolute;
+    background-color: greenyellow;
+    border: none;
+    font-size: 28px;
+    color: black;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    float: right;
+    margin-left: 30px;
+    box-sizing: content-box;
+    height: 50px;
+}
+
+    .button:after {
+        content: "";
+        background: #000000;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
     }
 
-    to {
-        bottom: 0;
-        opacity: 1
+    .button:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
     }
-}
