@@ -1,31 +1,5 @@
-﻿a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-}
-
-/* Provide sufficient contrast against white background */
-a {
-    color: #0366d6;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-/* Sticky footer styles
+﻿/* Sticky footer styles
 -------------------------------------------------- */
-html {
-    font-size: 14px;
-}
 
 @media (min-width: 768px) {
     html {
@@ -43,11 +17,6 @@ html {
 
 .box-shadow {
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-    font-size: 1rem;
-    line-height: inherit;
 }
 
 /* Sticky footer styles
@@ -79,7 +48,7 @@ body {
 }
 
 .spin {
-    border: 3px solid #000000;
+    border: 5px solid #000000;
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -90,7 +59,7 @@ body {
 }
 
 #loader2 {
-    border: 3px solid #000000;
+    border: 5px solid #000000;
     width: 220px;
     height: 220px;
     position: relative;
@@ -101,7 +70,7 @@ body {
 }
 
 #loader3 {
-    border: 3px solid #000000;
+    border: 5px solid #000000;
     width: 240px;
     height: 240px;
     position: relative;
@@ -112,7 +81,7 @@ body {
 }
 
 #loader4 {
-    border: 3px solid #000000;
+    border: 5px solid #000000;
     width: 260px;
     height: 260px;
     position: relative;
@@ -144,8 +113,8 @@ body {
 
 #text {
     color: #000000;
-    font-family: Arial;
-    font-size: 15px;
+    font-family: Cyber;
+    font-size: 20px;
     position: relative;
     top: -857px;
 }
@@ -192,4 +161,52 @@ body {
     background: transparent;
     overflow: hidden;
     position: relative;
+}
+
+/* non-animated buttons */
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-block-color: black;
+    outline: solid;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    padding: 20px 25px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: Cyber;
+}
+
+    .btn::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        bottom: -14px;
+        left: -13px;
+        background-color: yellow;
+        border-top: 2px solid black;
+        transform: rotate(45deg);
+    }
+
+    .btn::after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: -14px;
+        right: -13px;
+        background-color: yellow;
+        border-bottom: 2px solid black;
+        transform: rotate(45deg);
+    }
+
+@font-face {
+    font-family: Cyber;
+    src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+    font-display: swap;
 }

@@ -6,21 +6,208 @@
     <link rel="stylesheet" href="~/css/Cyber.css">
 </head>
 
-<div class="text-center">
-    <h1 class="display-4">Districts of Night City <br /></h1>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Districts of Night City <br /></h1>
+        <br />
+        <img src="~/images/nightcityMap.jpg" />
+    </div>
     <br />
-    <img src="~/images/nightcityMap.jpg" />
-</div>
-<br />
-<div>
-    <ul>
-        The Districts:
-        <li>Watson</li>
-        <li>Pacifica</li>
-        <li>City Center</li>
-        <li>Heywood</li>
-        <li>Westbrook</li>
-        <li>Santo Domingo</li>
-        <li>The Badlands</li>
-    </ul>
-</div>
+    <div>
+        <h1 style="align-content:center;">The Districts:</h1>
+        <ul style="list-style-type:none;">
+            <li>
+                <div class="btn-group" role="group">
+                    <button class="cybr-btn" onclick="Watson()" style="padding-bottom:20px">
+                        Watson <span aria-hidden></span>
+                        <span aria-hidden class="cybr-btn__glitch">Watson_</span>
+                        <span aria-hidden class="cybr-btn__tag"></span>
+                    </button>
+                </div>
+            </li>
+            <li style="padding-top:5px;">
+                <div class="btn-group" role="group">
+                    <button class="cybr-btn" onclick="Pacifica()" style="padding-bottom:20px">
+                        Pacifica <span aria-hidden></span>
+                        <span aria-hidden class="cybr-btn__glitch">Pacifica</span>
+                        <span aria-hidden class="cybr-btn__tag"></span>
+                    </button>
+                </div>
+            </li>
+            <li style="padding-top:5px;">
+                <div class="btn-group" role="group">
+                    <button class="cybr-btn" onclick="CityCenter()" style="padding-bottom:20px">
+                        City Center<span aria-hidden></span>
+                        <span aria-hidden class="cybr-btn__glitch"> </span>
+                        <span aria-hidden class="cybr-btn__tag"></span>
+                    </button>
+                </div>
+            </li>
+            <li style="padding-top:5px;">
+                <div class="btn-group" role="group">
+                    <button class="cybr-btn" onclick="Heywood()" style="padding-bottom:20px">
+                        Heywood<span aria-hidden></span>
+                        <span aria-hidden class="cybr-btn__glitch">Heyw00d</span>
+                        <span aria-hidden class="cybr-btn__tag"></span>
+                    </button>
+                </div>
+            </li>
+            <li style="padding-top:5px;">
+                <div class="btn-group" role="group">
+                    <button class="cybr-btn" onclick="Westbrook()" style="padding-bottom:20px">
+                        Westbrook<span aria-hidden></span>
+                        <span aria-hidden class="cybr-btn__glitch">Westbr00k</span>
+                        <span aria-hidden class="cybr-btn__tag"></span>
+                    </button>
+                </div>
+            </li>
+            <li style="padding-top:5px;">
+                <div class="btn-group" role="group">
+                    <button class="cybr-btn" onclick="SantoDomingo()" style="padding-bottom:20px">
+                        Santo Domingo<span aria-hidden></span>
+                        <span aria-hidden class="cybr-btn__glitch">Santo_Domingo</span>
+                        <span aria-hidden class="cybr-btn__tag"></span>
+                    </button>
+                </div>
+            </li>
+            <li style="padding-top:5px;">
+                <div class="btn-group" role="group">
+                    <button class="cybr-btn" onclick="Badlands()" style="padding-bottom:20px">
+                        Badlands<span aria-hidden></span>
+                        <span aria-hidden class="cybr-btn__glitch">Badlands</span>
+                        <span aria-hidden class="cybr-btn__tag"></span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div style="padding-top:25px">
+        <div id="watson" style="display:none;">
+            <p style="text-align:center;">
+                <img src="~/images/watsonSkyline.png" />
+            </p>
+            <p style="text-align:center;">
+            </p>
+        </div>
+    </div>
+
+    <div style="padding-top:25px">
+        <div id="pacifica" style="display:none;">
+            <p style="text-align:center;">
+                <img src="~/images/watsonSkyline.png" />
+            </p>
+            <p style="text-align:center;">
+            </p>
+        </div>
+    </div>
+
+    <div style="padding-top:25px">
+        <div id="citycenter" style="display:none;">
+            <p style="text-align:center;">
+                <img src="~/images/watsonSkyline.png" />
+            </p>
+            <p style="text-align:center;">
+            </p>
+        </div>
+    </div>
+
+    <div style="padding-top:25px">
+        <div id="heywood" style="display:none;">
+            <p style="text-align:center;">
+                <img src="~/images/watsonSkyline.png" />
+            </p>
+            <p style="text-align:center;">
+            </p>
+        </div>
+    </div>
+
+    <div style="padding-top:25px">
+        <div id="westbrook" style="display:none;">
+            <p style="text-align:center;">
+                <img src="~/images/watsonSkyline.png" />
+            </p>
+            <p style="text-align:center;">
+            </p>
+        </div>
+    </div>
+
+    <div style="padding-top:25px">
+        <div id="santodomingo" style="display:none;">
+            <p style="text-align:center;">
+                <img src="~/images/watsonSkyline.png" />
+            </p>
+            <p style="text-align:center;">
+            </p>
+        </div>
+    </div>
+
+    <div style="padding-top:25px">
+        <div id="badlands" style="display:none;">
+            <p style="text-align:center;">
+                <img src="~/images/watsonSkyline.png" />
+            </p>
+            <p style="text-align:center;">
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function Watson() {
+            var x = document.getElementById("watson");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        };
+        function Pacifica() {
+            var x = document.getElementById("pacifica");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        };
+        function CityCenter() {
+            var x = document.getElementById("citycenter");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        };
+        function Heywood() {
+            var x = document.getElementById("heywood");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        };
+        function Westbrook() {
+            var x = document.getElementById("westbrook");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        };
+        function SantoDomingo() {
+            var x = document.getElementById("santodomingo");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        };
+        function Badlands() {
+            var x = document.getElementById("badlands");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        };
+    </script>
+</body>

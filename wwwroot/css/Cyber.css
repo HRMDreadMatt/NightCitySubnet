@@ -6,7 +6,7 @@
 
 .navbar-brand {
     float: right;
-    padding: 15px 15px;
+    padding: 10px 10px;
     font-family: 'Cyber', sans-serif;
     background: linear-gradient(90deg, #f5ed00 70%, #e6de00 70%), #fff700;
     color: hsl(0, 0%, 0%);
@@ -62,7 +62,7 @@ body {
     position: relative;
     font-weight: 700;
     border: 0;
-    min-width: 300px;
+    min-width: 250px;
     height: 75px;
     line-height: 75px;
     transition: background 0.2s;
@@ -213,6 +213,6 @@ body {
     }
 }
 
-.cybr-btn:nth-of-type(2) {
+/*.cybr-btn:nth-of-type(2) {
     --primary-hue: 260;
-}
+}*/
