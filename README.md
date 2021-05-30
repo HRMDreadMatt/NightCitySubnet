@@ -9,3 +9,13 @@ This is a .net website for campaign meta-data and lore for the Player Characters
 ***
 
 [![Edgerunners Only](http://img.youtube.com/vi/DV6LE-9B1ic/0.jpg)](http://www.youtube.com/watch?v=DV6LE-9B1ic)
+
+***
+Nicola site was made with Bulma
+<a href="https://bulma.io">
+  <img
+    src="https://bulma.io/images/made-with-bulma.png"
+    alt="Made with Bulma"
+    width="128"
+    height="24">
+</a>
