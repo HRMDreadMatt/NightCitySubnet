@@ -1,47 +1,48 @@
 ﻿@{
     Layout = null;
 }
-
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="~/css/nicola.css" />
+    <title>Taste the Love!</title>
 </head>
 
-<br />
-<img src="~/images/nicola.jpg" class="mainImage" />
-<br />
-<h2>Taste the Love©️ in all these flavors!</h2>
-<div style="padding-top:25px">
-    <div class="card-deck">
-        <div class="card bg-secondary border-light">
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <img src="~/images/nicolaTransparent.png" class="heroImage" />
+            <p class="title">
+                Taste the Love!
+            </p>
+            <p class="subtitle">
+                ... in all these flavors!
+            </p>
+        </div>
+    </section>
+
+    <div class="columns has-text-centered">
+        <div class="column">
             <img class="card-img-top" src="~/images/NicolaOriginal.png" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">nicola Original</h5>
-                <p class="card-text"></p>
-                <p class="card-text"><small class="text-muted"></small></p>
-            </div>
+            <p class="is-center">nicola Original </p>
         </div>
-        <div class="card bg-secondary border-light">
+        <div class="column">
             <img class="card-img-top" src="~/images/NicolaSakura.png" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">nicola Sakura</h5>
-                <p class="card-text"></p>
-                <p class="card-text"><small class="text-muted"></small></p>
-            </div>
+            <p>nicola Sakura </p>
         </div>
-        <div class="card bg-secondary border-light">
+        <div class="column">
             <img class="card-img-top" src="~/images/NicolaBlue.png" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">nicola Blue</h5>
-                <p class="card-text"></p>
-                <p class="card-text"><small class="text-muted"></small></p>
-            </div>
+            <p>nicola Blue </p>
         </div>
     </div>
-
-</div>
+    <div class="column">
+        <div class="buttons">
+            <button class="button is-primary is-light"><a href="~/images/twistedgrim_nicola.gif">love</a></button>
+        </div>
+    </div>
+</body>
+</html>

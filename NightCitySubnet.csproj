@@ -12,6 +12,9 @@
     <Content Update="wwwroot\images\nicola-taste-the-love-Resize.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\images\twistedgrim_nicola.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\particles.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

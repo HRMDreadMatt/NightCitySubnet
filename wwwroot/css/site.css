@@ -31,6 +31,12 @@ body {
     margin-bottom: 60px;
 }
 
+img.news {
+    height: auto;
+    width: auto;
+    padding: 5px;
+}
+
 .footer {
     position: absolute;
     bottom: 0;

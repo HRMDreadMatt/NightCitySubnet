@@ -15,12 +15,6 @@
 
 <body>
     <div class="btn-group" role="group">
-        <button class="cybr-btn" onclick="riotClub()" style="padding-bottom:20px;">
-            Riot Club <span aria-hidden></span>
-            <span aria-hidden class="cybr-btn__glitch">Ri0t Club</span>
-            <span aria-hidden class="cybr-btn__tag"></span>
-        </button>
-        <br />
         <button class="cybr-btn" onclick="mox()" style="padding-bottom:20px;">
             Lizzy's Bar<span aria-hidden></span>
             <span aria-hidden class="cybr-btn__glitch">MOX</span>
@@ -28,47 +22,27 @@
         </button>
     </div>
 
-    <div style="padding-top:25px">
-        <div id="riot" style="display:none;">
-            <p style="text-align:center;">
-                <img src="~/images/riotclubFront.png" />
-            </p>
-            <p style="text-align:center;">
-                A new club is celebrating its grand opening in the south Watson district - Riot club!
-                The club was created to cater to some of the biggest names in the music industry and features a multi-level bar and all the booze and craft cocktails
-                you may need after dealing with that recent Arasaka transaction or getting burned by your fixer who swears they didn't know about that netrunner, they promise...
-            </p>
-        </div>
-
-        <div id="mox" style="display:none;">
-            <p style="text-align:center;">
-                <img src="~/images/Lizzie-Bar.jpg" />
-            </p>
-            <p style="text-align:center;">
-                Looing for the hottest braindances, the hottest bartenders, and the hottest punch-you-in-the-face vibe? You have to check out Lizzie's Bar. A Night City legend
-                up there with the likes of Afterlife! it's the perfect bar for the bad bitchs in your life (and the men who love them!)
-            </p>
-        </div>
+    <div id="mox" style="display:none;">
+        <p style="text-align:center;">
+            <img class="news" src="~/images/Lizzie-Bar.jpg" width="500" height="400" style="padding:5px; border:2px solid black;"/>
+        <p style="text-align:center;">
+            Gang related activity again in the Watson district as suspects from the Tyger Claw gang staged an attack at Lizzie's bar.
+            4 people dead and 2 injured after what seems to be an argument gone wrong at around 10 pm Friday night. Eye witnesses say the group approached a patron, yelling and threatening them
+            causing the bouncers at Lizzie's (potentially members of the MOX gang) to engage. An altercation ensued followed by gunshots and a brief power outage. One witness while fleeing the
+            gunfire mentioned a patreon calmly sipping their drink during the violence. Police have yet to respond, stating "These things usually sort themselves out." There's the NCPD for you...
+            <br />
+            <p style="align-content:flex-start">-Naomi Wu</p>
     </div>
+
+    <script>
+        function mox() {
+            var x = document.getElementById("mox");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        };
+        console.log("Lizzie's is home to the MOX, so mind your manners or you may end up in the back of a Trauma Team AVR, If you're lucky...");
+    </script>
 </body>
-
-<script>
-    function riotClub() {
-        var x = document.getElementById("riot");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    };
-
-    function mox() {
-        var x = document.getElementById("mox");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    };
-    console.log("Lizzie's is home to the MOX, so mind your manners or you may end up in the back of a Trauma Team AVR, If you're lucky...");
-</script>
