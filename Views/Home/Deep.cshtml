@@ -21,14 +21,14 @@
     <p id="demo"></p>
 
     <div style="display:none;" id="container">
-                <p>>  Abandon all hope, ye who enter here...</p>
+                <p><strong>Abandon all hope, ye who enter here </strong></p>
                 <br />
-                <p>>  Welcome to the /deep console.</p>
-                <p>>  Type L to see an available list of commands.</p>
+                <p>Welcome to the /deep console.</p>
+                <p>Type L to see an available list of commands.</p>
                 <br />
                 <p id="results"></p>
                 <br />
-                <input id="input" type="text" style="color:greenyellow" onfocus="this.value = ''; this.style.color=#6af55d;" />
+                <input id="input" type="text" style="color:greenyellow" onfocus="this.value = ''; " />
                 <button onclick="userInput()" class="button">run</button>
             </div>
             <br />
@@ -39,7 +39,7 @@
         var result = prompt("Hiya! If you found this, preem work! If your lookin to get past that Hellhound, I got you! Just throw my encoded key here! -8ug8ear❤️");
         if (result == password) {
             document.getElementById("demo").innerHTML = $('#container').html();
-            console.log("Congrats! You found the first flag! ");
+            console.log("Congrats! You found the first flag! Nova work decoding that password.");
         } else {
             alert("NetWatch KRASH barrier has blocked access to this subnet. You are being redirected now.");
             window.history.back();
@@ -53,34 +53,34 @@
 
             switch (user) {
                 case "L":
-                    text = ">  Type L for a List of commands || type H for Help || Type V for the Voodoo Boys subnet || Type X for a surprise"
+                    text = "Type L for a List of commands || type H for Help || Type V for the Voodoo Boys subnet || Type X for a surprise"
                     break;
                 case "l":
-                    text = ">  Type L for a List of commands || type H for Help || Type V for the Voodoo Boys subnet || Type X for a surprise"
+                    text = "Type L for a List of commands || type H for Help || Type V for the Voodoo Boys subnet || Type X for a surprise"
                     break;
                 case "H":
-                    text = ">  Thanks to some preem netrunners, all major functions of the /deep console have been adjusted to a single character. To see a list of known commands, type L"
+                    text = "Thanks to some preem netrunners, all major functions of the /deep console have been adjusted to a single character. To see a list of known commands, type L"
                     break;
                 case "h":
-                    text = ">  Thanks to some preem netrunners, all major functions of the /deep console have been adjusted to a single character. To see a list of known commands, type L"
+                    text = "Thanks to some preem netrunners, all major functions of the /deep console have been adjusted to a single character. To see a list of known commands, type L"
                     break;
                 case "V":
-                    text = ">  Add Voodoo API here"
+                    text = "GOTO /voodoo"
                     break;
                 case "v":
-                    text = ">  Add Voodoo API here"
+                    text = "GOTO /voodoo"
                     break;
                 case "X":
-                    text = ">  To be implemented"
+                    text = "To be implemented"
                     break;
                 case "x":
-                    text = ">  To be implemented"
+                    text = "To be implemented"
                     break;
                 case "skills":
-                    text = ">  Contrats! You found the 2nd flag!"
+                    text = "Contrats! You found the 2nd flag!"
                     break;
                 default:
-                    text = ">  That is not a known command"
+                    text = "That is not a known command"
             }
             document.getElementById("results").innerHTML = text;
         }

@@ -62,6 +62,11 @@ namespace NightCitySubnet.Controllers
             return View();
         }
 
+        public IActionResult Voodoo()
+        {
+            return View();
+        }
+
         public static string DeepJson()
         {
             JObject secret = JObject.Parse(System.IO.File.ReadAllText(@".\Data\deep.json"));
