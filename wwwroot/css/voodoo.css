@@ -1,7 +1,24 @@
 ﻿
+html {
+    background-color: black;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 50px;
+    font-family: 'Cyber', sans-serif;
+    background-color: black;
+    color: dodgerblue;
+}
+
 #myProgress {
     width: 100%;
-    background-color: #ddd;
+    background-color: red;
+    border-color: red;
+    color: red;
 }
 
 #myBar {

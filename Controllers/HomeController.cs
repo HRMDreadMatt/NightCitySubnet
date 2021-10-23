@@ -52,6 +52,12 @@ namespace NightCitySubnet.Controllers
             return View();
         }
 
+        [Route("Home/Arasaka/About")]
+        public IActionResult ArasakaAbout()
+        {
+            return View();
+        }
+
         public IActionResult Nicola()
         {
             return View();
