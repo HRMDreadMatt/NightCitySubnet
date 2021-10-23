@@ -1,6 +1,5 @@
 language: csharp
-solution: NightCitySubnet.sln
-
+solution: "NightCitySubnet.sln"
 script:
-  - dotnet restore
+  - echo "testing"
 
