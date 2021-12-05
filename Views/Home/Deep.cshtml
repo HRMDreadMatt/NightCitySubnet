@@ -40,6 +40,7 @@
         if (result == password) {
             document.getElementById("demo").innerHTML = $('#container').html();
             console.log("Congrats! You found the first flag! Nova work decoding that password.");
+            localStorage.setItem("Password", password);
         } else {
             alert("NetWatch KRASH barrier has blocked access to this subnet. You are being redirected now.");
             window.history.back();

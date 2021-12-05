@@ -8,21 +8,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    min-height: 50px;
     font-family: 'Cyber', sans-serif;
     background-color: black;
-    color: dodgerblue;
-}
-
-#myProgress {
-    width: 100%;
-    background-color: red;
-    border-color: red;
-    color: red;
-}
-
-#myBar {
-    width: 1%;
-    height: 30px;
-    background-color: #04AA6D;
+    color: cornflowerblue;
 }
